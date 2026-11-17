@@ -3,20 +3,15 @@
 <!-- magic-series:start -->
 ## Other Magic / Duels ports for Nintendo Switch
 
-Each project uses its own game files and installation method. The two 2015 ports are
-separate projects; Xbox 360 files cannot be used with the Android port or vice versa.
+These projects port the Xbox 360 games to Nintendo Switch. Each year needs its own
+game files and installation steps. Check the requirements in the linked guide before starting.
 
-| Game | Original version | Project and installation guide |
+| Game | Required original version | Project and installation guide |
 |---|---|---|
 | Duels of the Planeswalkers (2009) | Xbox 360 + required PC data | [m09-nx](https://github.com/IgnacioLeivaP/m09-nx#start-here) |
 | Magic 2012 | Xbox 360 | [m12-nx](https://github.com/IgnacioLeivaP/m12-nx#start-here) |
 | Magic 2013 | Xbox 360 | [m13-nx](https://github.com/IgnacioLeivaP/m13-nx#start-here) |
-| Magic 2014 | Android 1.5.0 | [Duels14_nx](https://github.com/IgnacioLeivaP/Duels14_nx#start-here) |
-| Magic 2015 | Android 1.4.4959 | [duels_nx](https://github.com/IgnacioLeivaP/duels_nx#start-here) |
 | Magic 2015 | Xbox 360 | [m15-nx](https://github.com/IgnacioLeivaP/m15-nx#start-here) |
-
-Otros años: los enlaces llevan a las instrucciones de cada port. Comprueba la versión
-de origen antes de preparar los archivos; las versiones Android y Xbox 360 son distintas.
 <!-- magic-series:end -->
 
 A **static recompilation** of the Xbox 360 XBLA game *Magic: The Gathering – Duels of the Planeswalkers 2013*
@@ -103,7 +98,7 @@ are already available in the supplied data locations. The SDK source is in `sdk/
 `--data` must contain the game files; `--xex`/`--xexp` can point at them individually if they are elsewhere. Add
 `--dry-run` to see every step and command without touching anything. `install\install.py --help` lists the rest.
 
-The NRO's **icon is yours**: `--icon <imagen>` (256x256 JPEG or PNG). Without it the build makes an NRO with no icon;
+The NRO's **icon is yours**: `--icon <image>` (256x256 JPEG or PNG). Without it the build makes an NRO with no icon;
 nothing of the sort is distributed with this repository.
 
 What the installer does, in order:

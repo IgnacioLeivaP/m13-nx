@@ -3,7 +3,7 @@
 For first-time installation, follow the [numbered README steps](../README.md#start-here).
 Prepare original files and dependencies first, build next, then copy only the generated
 installation to the SD card. Commands with `^` use Windows **cmd.exe**, not PowerShell.
-Other years and the separate Android ports are linked in the [series index](../README.md#other-magic--duels-ports-for-nintendo-switch).
+Other Xbox 360 years are linked in the [series index](../README.md#other-magic--duels-ports-for-nintendo-switch).
 
 `install/install.py` runs these steps for you. This page is the explanation, for when a step fails or when you want to
 run them by hand.
