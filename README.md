@@ -1,5 +1,24 @@
 # mtg13-nx — Magic: The Gathering – Duels of the Planeswalkers 2013 for the Nintendo Switch
 
+<!-- magic-series:start -->
+## Other Magic / Duels ports for Nintendo Switch
+
+Each project uses its own game files and installation method. The two 2015 ports are
+separate projects; Xbox 360 files cannot be used with the Android port or vice versa.
+
+| Game | Original version | Project and installation guide |
+|---|---|---|
+| Duels of the Planeswalkers (2009) | Xbox 360 + required PC data | [m09-nx](https://github.com/IgnacioLeivaP/m09-nx#start-here) |
+| Magic 2012 | Xbox 360 | [m12-nx](https://github.com/IgnacioLeivaP/m12-nx#start-here) |
+| Magic 2013 | Xbox 360 | [m13-nx](https://github.com/IgnacioLeivaP/m13-nx#start-here) |
+| Magic 2014 | Android 1.5.0 | [Duels14_nx](https://github.com/IgnacioLeivaP/Duels14_nx#start-here) |
+| Magic 2015 | Android 1.4.4959 | [duels_nx](https://github.com/IgnacioLeivaP/duels_nx#start-here) |
+| Magic 2015 | Xbox 360 | [m15-nx](https://github.com/IgnacioLeivaP/m15-nx#start-here) |
+
+Otros años: los enlaces llevan a las instrucciones de cada port. Comprueba la versión
+de origen antes de preparar los archivos; las versiones Android y Xbox 360 son distintas.
+<!-- magic-series:end -->
+
 A **static recompilation** of the Xbox 360 XBLA game *Magic: The Gathering – Duels of the Planeswalkers 2013*
 (title `58411213`) to the Nintendo Switch, built with [ReXGlue](https://github.com/rexglue/rexglue-sdk): the game's
 PowerPC code is translated to C++ ahead of time and compiled into a native Nintendo Switch program (`.nro`). No
@@ -11,7 +30,20 @@ goes on the console's SD card, on your own machine.
 
 ---
 
-## Requirements
+## Start here
+
+This is a **source release**: build the NRO on Windows from your own game before copying
+anything to the Switch. Follow these steps in order:
+
+1. [Check requirements](#step-1--check-requirements), including the exact game and TU.
+2. [Prepare original files and dependencies](#step-2--prepare-your-inputs-and-dependencies).
+3. [Run the installer](#step-3--build-the-switch-installation) from the repository root.
+4. [Copy the generated folder and launch](#step-4--launch-on-the-console) using title takeover.
+
+If a step fails, stop there and read its error; skipping shaders or other required build
+stages does not produce a complete installation. Technical details: [docs/BUILD.md](docs/BUILD.md).
+
+## Step 1 — check requirements
 
 A Windows PC (the toolchain is Windows; nothing else is tested):
 
@@ -25,7 +57,35 @@ A Windows PC (the toolchain is Windows; nothing else is tested):
 | `git` | to fetch the SDK's large third-party libraries (once) |
 | `plume`, `uam`, `imgui`, `reblue-XenosRecomp` | `--thirdparty`; see [THIRD_PARTY.md](THIRD_PARTY.md) |
 
-## Install
+## Step 2 — prepare your inputs and dependencies
+
+Download and extract this repository's source ZIP, or clone it with Git. Open a Windows
+**cmd.exe** terminal in that folder; the examples use `^` for line continuation (not
+PowerShell's syntax). Install the tools and Python modules listed in step 1.
+
+Extract your own base game and Title Update into separate input folders. If you have
+STFS packages rather than loose files, run the supplied extractor for each package:
+
+```bat
+py -3 tools/stfs_extract.py "C:\my-package" "C:\extracted-files"
+```
+
+Keep the originals unchanged. Check the required filenames and hashes against the game
+profile linked below. Optional DLC can be omitted; the required Title Update cannot.
+
+Fill the SDK dependencies before the first build:
+
+```bat
+py -3 install/fetch_thirdparty.py
+```
+
+This fetch uses the network. To use an existing SDK checkout with its submodules,
+add `--source "C:\local-rexglue-sdk"`. Separately prepare `--thirdparty` with the
+port-compatible dependencies listed in [THIRD_PARTY.md](THIRD_PARTY.md). Fetching the
+SDK libraries does not supply those application dependencies. Use a new output folder
+outside this source repository; keep your source, input game and output folders separate.
+
+## Step 3 — build the Switch installation
 
 ```bat
 py -3 install\install.py --game mtg13 ^
@@ -37,15 +97,8 @@ py -3 install\install.py --game mtg13 ^
     --out   "C:\ruta\a\la\salida"
 ```
 
-`--dlc`, `--tu` and `--icon` are optional. The SDK is `sdk/` inside this repository, so nothing has to be pointed at
-it. Its large third-party libraries (FFmpeg, SDL3, glslang, Vulkan headers…) are **not** copied here: fetch them once,
-before the first build, with
-
-```bat
-py -3 install\fetch_thirdparty.py --help     :: how it works
-py -3 install\fetch_thirdparty.py            :: clone the SDK release and fill sdk\thirdparty\
-py -3 install\fetch_thirdparty.py --source <copia de rexglue-sdk>   :: from a local checkout, no network
-```
+`--dlc` and `--icon` are optional. `--tu` can be omitted only when the required TU files
+are already available in the supplied data locations. The SDK source is in `sdk/`; prepare its libraries in step 2.
 
 `--data` must contain the game files; `--xex`/`--xexp` can point at them individually if they are elsewhere. Add
 `--dry-run` to see every step and command without touching anything. `install\install.py --help` lists the rest.
@@ -69,6 +122,9 @@ What the installer does, in order:
 9. compiles the `.nro` with devkitA64 (with your `--icon`, if given);
 10. leaves `switch\mtg13-nx\`, ready for the SD card, next to a `SHA256_mtg13-nx.txt` of everything in it.
 
+Preserve existing saves and settings when updating. Copy only the generated
+installation, not the source repository or original Xbox package.
+
 Then copy **that folder** to `sdmc:/switch/` on the console (Hekate's USB mass storage is the most reliable way for
 many files; MTP works for single files but its listing went stale in testing — always read back and compare).
 
@@ -86,7 +142,7 @@ The Title Update package itself (`TU_1C424GJ_0000004000000.0000000000081`) is ch
 SHA256, the 67 `Deck_*.WAD` hashes and the five DLC packages are in
 [`install/games/mtg13.json`](install/games/mtg13.json). Without the DLC the base campaign still works.
 
-## Launching on the console
+## Step 4 — launch on the console
 
 Hold **R** while starting any game from the home menu, then open the Homebrew Menu and start `mtg13`. A title takeover
 is required: from the Album the applet does not get enough memory.
@@ -164,3 +220,4 @@ Nintendo. *Magic: The Gathering* and *Duels of the Planeswalkers* are trademarks
 
 No game data is distributed: you must own the game. Do not redistribute the folder the installer produces, nor any
 output of these tools that contains the game's data.
+
