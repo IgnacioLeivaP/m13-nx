@@ -1,0 +1,535 @@
+{
+  "schema": 1,
+  "id": "mtg13",
+  "name": "Magic: The Gathering - Duels of the Planeswalkers 2013",
+  "title_id": "58411213",
+  "nro": "mtg13.nro",
+  "sd_folder": "mtg13-nx",
+  "pack_name": "game_root",
+  "sdk_min": "0.10.0",
+  "_note": "The SHA256 values are of the user's files (no game data is published): they are verification pointers. data: inside the game folder; tu: the Title Update package; dlc: content packages; decks: the game's Deck_*.WAD files.",
+  "required": [
+    {
+      "file": "Data_Core.wad",
+      "where": "data",
+      "size": 477968733,
+      "sha256": "e368c17dcf039e34a8bce361116b35ce749cf664693700f4796971edc56c5bf5",
+      "info": "the game data"
+    },
+    {
+      "file": "Update_Data_Core.wad",
+      "where": "data",
+      "size": 2548730,
+      "sha256": "31db6492020e94cd38e6a165afb8be6bdcc79b9e16aa35fb9c50e0e5fcec610d",
+      "info": "the Title Update data (the game's and --tu's must be the same file)"
+    },
+    {
+      "file": "Update_Data_Decks.wad",
+      "where": "data",
+      "size": 512351,
+      "sha256": "ff10f9908d730c85e89de90c3c8de7930c3e340d4c09b713489f8d55dcd696e7",
+      "info": "los mazos que trae el Title Update"
+    },
+    {
+      "file": "default.xex",
+      "where": "data",
+      "size": 13381632,
+      "sha256": "726e26b408c7cd9078bc60dd3555de6e92c4c55dbb768c03b2e909bf4ace0bc8",
+      "info": "the game executable (folder of the XBLA copy of title 58411213)"
+    },
+    {
+      "file": "default.xexp",
+      "where": "data",
+      "size": 907264,
+      "sha256": "87fda35677d9cfd626123609b52aa4fcb775ca1fca4817247bd5aaff770f8aed",
+      "info": "la parte del ejecutable que aplica el Title Update"
+    }
+  ],
+  "optional": [
+    {
+      "file": "TU_1C424GJ_0000004000000.0000000000081",
+      "where": "tu",
+      "size": 4055040,
+      "sha256": "8f40ec41b7ed2c4921ea765bf30f834edff774f86283a82263436675e3a0b4ec",
+      "info": "the Title Update #1 package as downloaded (default.xexp and the Update_Data_*.wad come from here)"
+    }
+  ],
+  "shader_wads": [
+    "Data_Core.wad",
+    "Update_Data_Core.wad"
+  ],
+  "decks": [
+    {
+      "file": "Deck_0001_ST.WAD",
+      "size": 11341086,
+      "sha256": "8a7e4745004c6b5dc6d770c460da39b14b61f6cfa3bbd0fb86cda39c35834f98",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0002_ST.WAD",
+      "size": 12182330,
+      "sha256": "4707e9956b13d9fc5ca2f781feba4a71486194ee4fcdacf4bfccd7528cf78113",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0003_ST.WAD",
+      "size": 12056106,
+      "sha256": "12a3491f792124630abb94786de96993ceb8eb529150ba4ba9686ccf8bae2deb",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0004_ST.WAD",
+      "size": 11306498,
+      "sha256": "85639bc7801f8aeb77333b5f97a92a8169ea665e84c0035e86d040a1d3c53534",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0005_ST.WAD",
+      "size": 13236546,
+      "sha256": "9f4b4c4eac137ef8ca68adfe88430401fc7b49419d872c979a10d85f511dc338",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0006_ST.WAD",
+      "size": 12612918,
+      "sha256": "74bcdde7e51c021d444b12e996831131ef5acea70e7198d15040988b80d78ce8",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0007_ST.WAD",
+      "size": 11365422,
+      "sha256": "25c4b18ba843bcf48690c735e14804020bc07139ee0ca20c937d5c0372b9f85d",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0008_ST.WAD",
+      "size": 10405186,
+      "sha256": "a0a00c9b6d54009dfe2165ef653db0096c0e142537318535be86ff4d49bc4bdb",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0009_ST.WAD",
+      "size": 11964726,
+      "sha256": "456f4f8de24863f5c028dc23242dd62de2af2e1ea4f10c36ae1877bd3326b286",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0010_ST.WAD",
+      "size": 10555658,
+      "sha256": "b12542c4700fe0e0d622fbf1f40a44c7174290799eeac0b448f1b2fb0f33dfa6",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0011_ST.WAD",
+      "size": 8346730,
+      "sha256": "53e3dfa25f09a026f4b525e8804206281ffe4cd85e1028ea5308f01f93faf811",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0012_ST.WAD",
+      "size": 11334342,
+      "sha256": "6f7a5d478b3c0e97b6ab2227ae0a7e29ff4c51c8a6a0a5c63d360bf4d870d3a5",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0013_ST.WAD",
+      "size": 12750922,
+      "sha256": "5530809fac925b234d806b9c48df63010cf2201516dec025537ed8f63160813d",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0014_ST.WAD",
+      "size": 13274322,
+      "sha256": "c445753deeae9a7d0975696e200612abde6821789a9fb9efcf425c68d1ac8926",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0015_ST.WAD",
+      "size": 13933798,
+      "sha256": "4cc5376f7da9f6f228b604b60bddf07278d0d1126c9f4d95910a983774b98897",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0016_ST.WAD",
+      "size": 12254074,
+      "sha256": "771a72c0ab90136ae2e982905ec403a5bda412262acdde1c803a065fc11d376f",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0020_CH.WAD",
+      "size": 5790390,
+      "sha256": "940ec40d93cb809d84a1fd63504c06bc9db6ae51681b10b1c0cdc72cec70d53e",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0021_CH.WAD",
+      "size": 3030050,
+      "sha256": "6e6b307e6a3c6ea3162251197c30620d361ad87361ed74efa526b91164ae3499",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0024_CH.WAD",
+      "size": 4726326,
+      "sha256": "72e5b680b5a3d2e72dfbda917bf63e928fe58b5ad0a6bb115aaec6304da86050",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0025_CH.WAD",
+      "size": 4620778,
+      "sha256": "321afa99b3ec761e1b424c88fc4badd8e1a7afe4a92b6310d650ae9ab1cceae8",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0026_CH.WAD",
+      "size": 6602666,
+      "sha256": "403c560e33b9721e2be4b89f3f37f1b66adb88ca36409e0c38cda1a166631885",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0027_CH.WAD",
+      "size": 3334226,
+      "sha256": "9bdb68f9b8fc42f49379da299216bfce4bfb68dc1bd602e009fec82c51fb07bc",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0028_CH.WAD",
+      "size": 5213062,
+      "sha256": "cb1ed946c799bcbeba87fe8580f00a1a58ae4d7e3d1dd84a51168f771c83db18",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0029_CH.WAD",
+      "size": 4613186,
+      "sha256": "0d041ad174e78160135f28c861e2e3a44104ebfe5b6efd15272d7507705624c5",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0030_CH.WAD",
+      "size": 4842654,
+      "sha256": "375a9ac9e412ed332f2da5e9a8538dc432069742e739c9b5dbccc373ff68b47a",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0031_CH.WAD",
+      "size": 3683654,
+      "sha256": "7ce1e780b94922b44c7dfff1381d1aba5677e8b8aeada5fdd0c8d77d3ef845e8",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0032_CH.WAD",
+      "size": 4553682,
+      "sha256": "81b77bb84674094860c7be32680e8af5ffb478c3df92ee4f0a364c39fb932a8d",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0033_CH.WAD",
+      "size": 3559382,
+      "sha256": "51acf21785c235f34a3327611c69a15cd6fd65bdf8c52e1471f666bfe859671a",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0036_CH.WAD",
+      "size": 4850394,
+      "sha256": "cdc9eceaeb42bf0c07088dfd0ddc88d96b5f143de8639ce4a9d10c8f2382575c",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0037_CH.WAD",
+      "size": 3672274,
+      "sha256": "a2941076a6dbfffaa4fd13f69bea830744ebee480d9574d6cd3e236ad99e1a13",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0041_CH.WAD",
+      "size": 2364538,
+      "sha256": "d0d0bc8aa24a9eb4d670ac575c7b6e557f781bc1136bb225fc6459e15a5afbfc",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0042_CH.WAD",
+      "size": 5479062,
+      "sha256": "0a804cfe7fbd5573e7e4b56cf03830af3f2329b63cfd5ca79531d30f82b45637",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0043_CH.WAD",
+      "size": 4687030,
+      "sha256": "5b0cd8ac037a333c9ea315090c28ea9131093752add5fae9d034ef281640c4c3",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0046_CH.WAD",
+      "size": 5061222,
+      "sha256": "f012eb24d139f011295847a322f88f8cb005420ca8c755d3a16f69d3fefb1544",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0047_CH.WAD",
+      "size": 3694690,
+      "sha256": "e17e017e32506204b3a1534293ca9f95112d771edc64bb8fb866fba2b423bfdf",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0048_CH.WAD",
+      "size": 6045234,
+      "sha256": "5afa2c104b6ad8df5f3dbf1d2b7e7f112fbee7b1b933dc7be9f633f09a71e1cc",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0049_CH.WAD",
+      "size": 5014610,
+      "sha256": "68755477515a3553d588ecb72c41449668265d7cf953107bd9a5ec7a9177b852",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0050_CH.WAD",
+      "size": 4052094,
+      "sha256": "44a9d4c1c521988f146e4680ea29bbce4c6e1c8ec2008d48de553455a23b2bad",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0051_CH.WAD",
+      "size": 3604306,
+      "sha256": "b61317e7ffdf89e028daa442b335615e6427b304057f4ee0afe06fb3efc49303",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0052_CH.WAD",
+      "size": 3226262,
+      "sha256": "5d0abf174dc76f0015d460e2c568aa58cc90803e43350440a56e494e2416aefc",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0053_CH.WAD",
+      "size": 3203334,
+      "sha256": "e0af513b03467ff59f8bdf21c496df4d00dfa2a75b3b99df9eda9b649d544c0c",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0054_CH.WAD",
+      "size": 2977698,
+      "sha256": "27bcf62b14696fd39e0aad6683d287ca4371bccf88ffa83ae4c6245025b6fa4d",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0055_CH.WAD",
+      "size": 3231254,
+      "sha256": "55d73655c0e15c1c563588fcc29f19acb54ed2a11b171bec8d8eb550b01a027b",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0056_CH.WAD",
+      "size": 2812558,
+      "sha256": "8fa2c1778ef437bd31c4ab113434d4603cf08ef709ba8d291d1c62a1aa10acce",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0057_CH.WAD",
+      "size": 3134838,
+      "sha256": "cd047534471b8b3cb00004571368958545bf62c99e8345331949217f1af586f5",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0058_CH.WAD",
+      "size": 4788666,
+      "sha256": "f5e919b6ba488aad759d1204ed15a16ae5190965f1ec778b9777789b4ed06f4c",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0059_CH.WAD",
+      "size": 3640918,
+      "sha256": "a52a64f51857bc219385809f591431155159f184b89aaf8c75f96eb0fa52d617",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0060_ST.WAD",
+      "size": 7139534,
+      "sha256": "9b053cff85d297268203510771da60779ec241ebeda453f39d447343b4e820ae",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0061_ST.WAD",
+      "size": 8198646,
+      "sha256": "9ff9600eeb5d0e2f130956c783fea34372e4beee21c6d128768e23936101a448",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0062_ST.WAD",
+      "size": 7666786,
+      "sha256": "b1cfc918891fe56129f56cb0ce9141162651f6ddc2be20c359cfa0de737dafd2",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0063_ST.WAD",
+      "size": 7700826,
+      "sha256": "9df59109c1bf0bc7eff1e68c063d5a51e6d04e52ad0e23126a453d0c82a68c63",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0064_ST.WAD",
+      "size": 5856270,
+      "sha256": "532f80582f2ef352f32bef431ee88f435a6c1b4ab66ff129eafc7e09a2c11ce5",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0065_ST.WAD",
+      "size": 9291670,
+      "sha256": "65230fcb72c1906c81bda7e9aba4d9d7920c21fe80fe0289908f99af53fb0d2c",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0066_ST.WAD",
+      "size": 7773406,
+      "sha256": "f7293ecaf305c325e4532089c350a287670e197cb2afbbfc20fe76ce1f99d19c",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0067_ST.WAD",
+      "size": 7733230,
+      "sha256": "e8263e99f306804c7400192ad0e3a1dac69e6f91d5f5a3e6996c21aa8d5e0672",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0068_ST.WAD",
+      "size": 6513262,
+      "sha256": "c24c8af04ad2473b691dd4dc8ad80167037e27fd9697ce4ce95511cdc31594de",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0069_ST.WAD",
+      "size": 8458434,
+      "sha256": "48bee110894e55a7c9cf6be5e8c689bd083175ec16dc4eecb303c758a1292ff9",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0070_ST.WAD",
+      "size": 6198346,
+      "sha256": "397c107dc1b7d84f231f7e3c3173d9c532d5a49efd05563935ef9c065634fe6d",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0071_ST.WAD",
+      "size": 8847558,
+      "sha256": "6a4b4ef95e7dfcaa42c6b5836b38f1d0041e73dc1b67863effc5d621d9a725b4",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0072_ST.WAD",
+      "size": 8320910,
+      "sha256": "42b09d9555b3da9399ade7cb23711f7a86d8a6272a129c06a4c4b7e9444ad3d8",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0073_ST.WAD",
+      "size": 8840262,
+      "sha256": "d73087864c4e28500105dbb5401e80705966b58bb71cc1ddde8b80064815158b",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0074_ST.WAD",
+      "size": 9476530,
+      "sha256": "bdadf6d76ffd9d5fbefe9e5fcbd9702ec27fe6f4ceaa9d136413c82551f13485",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0075_ST.WAD",
+      "size": 10338790,
+      "sha256": "f416ca8c73e3d798b1e2ecd52656bbe1914ce69067910c00d028dcb06b7baf6c",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0076_ST.WAD",
+      "size": 8443126,
+      "sha256": "181c310cb33fb6fe65f101271449074f496d83272ed09876a7f082404e97007a",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0077_PC.WAD",
+      "size": 13195862,
+      "sha256": "0b92f98de9ec1efd043944e5bfee239730b3c97c5610c79a92bb4ad3531bf911",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0078_UT.WAD",
+      "size": 5104134,
+      "sha256": "2473f22dcac14fadb197edad48ccf75f0b10120b1173cc36cd1616b088fe158f",
+      "info": "a game deck"
+    },
+    {
+      "file": "Deck_0079_UT.WAD",
+      "size": 3518670,
+      "sha256": "41bfaa286cbe9cafecc04e80c50071ec9df739c8abc125a4fa58a6d97323bffd",
+      "info": "a game deck"
+    }
+  ],
+  "dlc": [
+    {
+      "file": "69D868BBF82BED2260E7935FAB95468A7358A19258",
+      "size": 30429184,
+      "sha256": "d757cdd72087872966dfe1010fb0760844cadb36442b90d4effa9e7f13611af2",
+      "info": "purchased DLC package"
+    },
+    {
+      "file": "6DF7A4886B84930CD2100E554B4F1CCBE498E40458",
+      "size": 27914240,
+      "sha256": "2f78823dccf7d75dddff92548f140ce6ca47f69ca2787f7fac1d7ef0e8192f0d",
+      "info": "purchased DLC package"
+    },
+    {
+      "file": "734D5E1623BF74D583DF673845862B819AE9DF5D58",
+      "size": 28000256,
+      "sha256": "96f4acf946844d734f59e55c43d94a7d60f0f02d041006916f1e5564699f73b2",
+      "info": "purchased DLC package"
+    },
+    {
+      "file": "D7D1EF18B8D53B592421FD1A7285802180B564FC58",
+      "size": 57344,
+      "sha256": "dd9e4c710b2e8ba44c428b8178677f6b3d4dd376d38ea1f992fff8822b7c86af",
+      "info": "purchased DLC package"
+    },
+    {
+      "file": "DFE697C280F44F337FE59393FE0BF88A4E5F7D4258",
+      "size": 65073152,
+      "sha256": "2f233b321f2b7d703674af7dd6a985e12bb13800d32a712a434b01fcc869d6f6",
+      "info": "purchased DLC package"
+    }
+  ],
+  "codegen": {
+    "manifest": "mtg13_manifest.toml",
+    "profile": "optimised",
+    "env": {
+      "REX_MAX_JUMP_TABLE_ENTRIES": "4096"
+    }
+  },
+  "_lua_note": "The menus are pulled from the user's WAD and patched here, at install time: the repository carries neither the text nor the bytecode of the game. patch: which set of install/lua13.py operations is applied; sha256: how the file tested on the console ended up (if it differs, a warning is printed and the install continues).",
+  "lua": [
+    {
+      "module": "menus.main_menu.main_menu_carousel",
+      "out": "menus.main_menu.main_menu_carousel.lua",
+      "wad": "Data_Core.wad",
+      "entry": "DATA_CORE/DATA_ALL_PLATFORMS/LUBE/SKIND12/MENUS/MAIN_MENU/MAIN_MENU_CAROUSEL.LUA",
+      "patch": "carousel",
+      "sha256": "2900b8e24ae087aa3c71b3195f76569e35d3bb885399381f6faf1b0ddf22077f",
+      "info": "removes Leaderboards, Multiplayer, Achievements and Additional content from the main menu"
+    },
+    {
+      "module": "menus.dlg.content_enumeration",
+      "out": "menus.dlg.content_enumeration.lua",
+      "wad": "Data_Core.wad",
+      "entry": "DATA_CORE/DATA_ALL_PLATFORMS/LUBE/SKIND12/MENUS/DLG/CONTENT_ENUMERATION.LUA",
+      "patch": "enumeration",
+      "sha256": "b9ff039a43dbe102065b915900b336b10a3e2df33b2eb2e2a2ab906efd3c4268",
+      "info": "the \"reloading content\" notice stays invisible instead of covering the screen for five seconds at every start"
+    },
+    {
+      "module": "menus.help_options.settings.basic",
+      "out": "menus.help_options.settings.basic.lua",
+      "wad": "Data_Core.wad",
+      "entry": "DATA_CORE/DATA_ALL_PLATFORMS/LUBE/SKIND12/MENUS/HELP_OPTIONS/SETTINGS/BASIC.LUA",
+      "patch": "settings",
+      "sha256": "0eca2a7e94e29a083500a3e348811d967f0210a976efb10682c92f7936fee406",
+      "info": "the Settings menu with Language, button icons and the DLC state"
+    }
+  ],
+  "sd_extra": []
+}
